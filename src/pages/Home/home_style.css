@@ -1,0 +1,190 @@
+:root {
+    --primary-color: #3498db;
+    --secondaty-color: #2980b9;
+    --text-color: #ecf0f1;
+    --text-sencondary-color: #000f1f;
+    --background-color: #34495e;
+}
+
+.body-home {
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--text-color);
+    transition: background 0.5s ease;
+}
+
+.body-home.ativo{
+    background-color: var(--background-color);
+}
+
+.menu-lateral {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--background-color);
+    z-index: 5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s  cubic-bezier(0.68,-0.55,0.27, 1.55);
+}
+
+.menu-lateral.ativo {
+    left: 0;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 60px;
+}
+
+.menu-lateral ul li {
+    padding: 15px 30px;
+}
+
+.menu-lateral ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu-lateral ul li a i {
+    font-size: 27px;
+}
+
+.menu-lateral ul li:hover {
+    background-color: var(--secondaty-color);
+    transition: 0.8s;
+}
+
+.menu-lateral ul li a i:hover{
+    transform:translateX(5px) rotate(5deg);
+}
+
+.menu-horizontal{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 13%;
+    background: white;
+    transition: all 0.5s  cubic-bezier(0.68,-0.55,0.27, 1.55);
+    z-index: 9;
+}
+
+.menu-horizontal ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+}
+
+.menu-horizontal ul li{
+    padding: 15px 30px;
+}
+
+.menu-horizontal ul li a{
+    text-decoration: none;
+    color: var(--background-color);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-horizontal ul li a i{
+    font-size: 48px;
+    position: relative;
+    margin-bottom: -30px;
+    top: -27px;
+}
+.menu-horizontal ul li a i:hover{
+    transform: translateX(5px) rotate(5deg);
+    
+}
+
+.botao-menu{
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 6;
+    border-radius: 5px;
+    font-size: 24px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+
+.botao-menu:hover{
+    background-color: var(--secondaty-color);
+}
+
+.botao-menu.ativo{
+    left: 320px;
+}
+
+.conteudo{
+    
+    margin-left: 10px;
+    padding: 100px;
+    color: var(--text-sencondary-color);
+    transition: all 0.5s ease;
+   
+}
+.conteudo.ativo{
+    margin-left: 320px;
+    color: var(--text-color);
+}
+
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 4;
+}
+.background.ativo{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    height: 80vh;
+    width: 80%;
+    margin-left: 80px;
+}
+.secao-background .texto-background{
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+.texto-background h1{
+    font-size: 50px;
+    color:#0e2339;
+    font-weight: bold;
+}
+section .ativo{
+    background-color:var(--text-color) ;
+    margin-left: 250px;
+}
+
+
+ 
